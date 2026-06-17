@@ -29,6 +29,7 @@ Buka terminal Anda, lalu arahkan ke folder tempat Anda ingin menyimpan proyek in
 ```bash
 git clone https://github.com/ZaxkyyOfficial/Capstone_Project-PJK-GM017.git
 cd omnisight-bi
+```
 
 ### 2. Penyiapan Backend (`backend-service`)
 ```bash
