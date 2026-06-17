@@ -56,15 +56,49 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 💻 Petunjuk Penggunaan
-Cara paling mudah dan praktis untuk menjalankan keseluruhan proyek ini di Windows adalah dengan menggunakan script otomatis yang telah disediakan. Pastikan Anda berada di root folder proyek. Klik ganda (double click) file start_all.bat.
+### 💻 Petunjuk Penggunaan
 
-Script start_all.bat akan secara otomatis melakukan:
+Cara paling mudah dan praktis untuk menjalankan keseluruhan proyek ini di Windows adalah dengan menggunakan script otomatis yang telah disediakan.
 
-🧹 Membersihkan port 3000 dan 8000 (jika sedang digunakan).
-🗄️ Melakukan sinkronisasi database Prisma dan seeding data awal.
-🧠 Melatih ulang (training) model Machine Learning dengan data dummy.
-🚀 Menjalankan Backend Service (Port 3000).
-🚀 Menjalankan AI Service (Port 8000).
-🚀 Menjalankan Frontend Client (Port 5173).
+1. Pastikan Anda berada di *root folder* proyek.
+2. Klik ganda (*double click*) file `start_all.bat`.
+
+Script `start_all.bat` akan secara otomatis melakukan:
+* 🧹 Membersihkan port 3000 dan 8000 (jika sedang digunakan).
+* 🗄️ Melakukan sinkronisasi database Prisma dan *seeding* data awal.
+* 🧠 Melatih ulang (*training*) model Machine Learning dengan data *dummy*.
+* 🚀 Menjalankan Backend Service (Port 3000).
+* 🚀 Menjalankan AI Service (Port 8000).
+* 🚀 Menjalankan Frontend Client (Port 5173).
+
+---
+
+### 🌐 Akses Aplikasi
+
+Setelah terminal menunjukkan semua servis berhasil dijalankan, Anda dapat mengakses:
+
+| Layanan | URL Akses |
+| :--- | :--- |
+| **Frontend / UI Dashboard** | http://localhost:5173 |
+| **Backend API** | http://localhost:3000 |
+| **AI API** | http://localhost:8000 |
+
+---
+
+### 🔐 Kredensial Login (Default)
+
+Untuk masuk ke dalam dashboard sebagai administrator, gunakan akses berikut:
+* **Email:** `admin@omnisight.com`
+* **Password:** `admin123`
+
+---
+
+### 📌 Informasi Penting Lainnya
+
+⚠️ Harap perhatikan beberapa hal berikut saat mengembangkan atau menjalankan proyek:
+
+* **Database (Prisma ORM):** Script `start_all.bat` mengeksekusi perintah dengan flag `--accept-data-loss` saat melakukan *push* skema. Berhati-hatilah jika Anda memiliki data penting di *environment* lokal Anda, karena data tersebut mungkin akan tertimpa dan hilang.
+* **Konflik Port:** Jika ada layanan yang gagal berjalan, pastikan port 3000, 5173, dan 8000 dalam keadaan kosong dan tidak diblokir oleh Firewall atau aplikasi lain (seperti antivirus).
+* **Model Machine Learning:** Saat pertama kali dijalankan oleh script, AI Service akan memakan waktu sejenak untuk memproses dan melatih model menggunakan sekitar 20.000 baris data *dummy*. Mohon tunggu hingga proses selesai.
+
 
