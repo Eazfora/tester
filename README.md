@@ -16,9 +16,9 @@ Proyek ini mengintegrasikan tiga komponen utama untuk memberikan visualisasi dat
 ## 🛠️ Persyaratan Sistem
 
 Sebelum menjalankan proyek ini, pastikan mesin Anda telah terinstal:
-* **Node.js** (Disarankan versi LTS)
-* **Python** (Versi 3.8 atau lebih baru)
-* **Git** (Opsional, untuk kloning repositori)
+* **[Node.js](https://nodejs.org/en/download/)** (Disarankan versi LTS)
+* **[Python](https://www.python.org/downloads/)** (Versi 3.8 atau lebih baru)
+* **[Git](https://git-scm.com/downloads)** (Opsional, untuk kloning repositori)
 
 ---
 
