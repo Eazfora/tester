@@ -99,9 +99,13 @@ Setelah terminal menunjukkan semua servis berhasil dijalankan, Anda dapat mengak
 
 ### 🔐 Kredensial Login (Default)
 
+Anda bisa membuat akun sesuai keinginan Anda.
+
 Untuk masuk ke dalam dashboard sebagai administrator, gunakan akses berikut:
 * **Email:** `admin@omnisight.com`
 * **Password:** `admin123`
+
+Akun tersebut bisa dibuka pada tautan berikut sebagai contohnya: https://frontend-client-vercel.vercel.app/
 
 ---
 
