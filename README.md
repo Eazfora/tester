@@ -73,6 +73,14 @@ Script `start_all.bat` akan secara otomatis melakukan:
 
 ---
 
+### ⚙️ Pengaturan Environment
+
+Sebelum menjalankan aplikasi, buat file bernama `.env` di folder utama proyek, lalu salin isi dari file `.env.example` dan sesuaikan dengan URL MongoDB Anda sendiri:
+
+```env
+DATABASE_URL="isi_dengan_url_mongodb_anda"
+```
+---
 ### 🌐 Akses Aplikasi
 
 Setelah terminal menunjukkan semua servis berhasil dijalankan, Anda dapat mengakses:
