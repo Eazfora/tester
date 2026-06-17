@@ -27,6 +27,28 @@ Sebelum menjalankan proyek ini, pastikan mesin Anda telah terinstal:
 ### 1. Kloning Repositori
 Buka terminal Anda, lalu arahkan ke folder tempat Anda ingin menyimpan proyek ini.
 ```bash
-git clone <url-repositori-anda>
+git clone https://github.com/ZaxkyyOfficial/Capstone_Project-PJK-GM017.git
 cd omnisight-bi
 
+### 2. Penyiapan Backend (`backend-service`)
+```bash
+cd backend-service
+npm install
+
+### 3. Penyiapan Frontend (frontend-client)
+```bash
+cd ../frontend-client
+npm install
+
+### 4. Penyiapan AI Service (ai_service)
+Sangat disarankan untuk menggunakan virtual environment agar dependensi Python tidak bentrok dengan proyek lain.
+```bash
+cd ../ai_service
+python -m venv venv
+
+# Aktivasi virtual environment (Windows)
+venv\Scripts\activate
+
+# Install dependensi
+pip install -r requirements.txt
+```bash
