@@ -35,11 +35,13 @@ cd omnisight-bi
 ```bash
 cd backend-service
 npm install
+```
 
 ### 3. Penyiapan Frontend (frontend-client)
 ```bash
 cd ../frontend-client
 npm install
+```
 
 ### 4. Penyiapan AI Service (ai_service)
 Sangat disarankan untuk menggunakan virtual environment agar dependensi Python tidak bentrok dengan proyek lain.
@@ -52,4 +54,17 @@ venv\Scripts\activate
 
 # Install dependensi
 pip install -r requirements.txt
+```
+
+## 💻 Petunjuk Penggunaan
+Cara paling mudah dan praktis untuk menjalankan keseluruhan proyek ini di Windows adalah dengan menggunakan script otomatis yang telah disediakan. Pastikan Anda berada di root folder proyek. Klik ganda (double click) file start_all.bat.
+
+Script start_all.bat akan secara otomatis melakukan:
+
+🧹 Membersihkan port 3000 dan 8000 (jika sedang digunakan).
+🗄️ Melakukan sinkronisasi database Prisma dan seeding data awal.
+🧠 Melatih ulang (training) model Machine Learning dengan data dummy.
+🚀 Menjalankan Backend Service (Port 3000).
+🚀 Menjalankan AI Service (Port 8000).
+🚀 Menjalankan Frontend Client (Port 5173).
 
