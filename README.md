@@ -51,4 +51,4 @@ venv\Scripts\activate
 
 # Install dependensi
 pip install -r requirements.txt
-```bash
+
